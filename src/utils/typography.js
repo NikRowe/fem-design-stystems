@@ -1,6 +1,7 @@
-export const primaryFont = `"Cabin", sans-serif`;
+export const primaryFont = '"Cabin", sans-serif';
+export const headerFont = '"Modak", cursive';
 
-export const typseScale = {
+export const typeScale = {
   header1: "4.209rem",
   header2: "3.157rem",
   header3: "2.369rem",
