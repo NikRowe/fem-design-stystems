@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { defaultTheme, typeScale } from "../utils";
+import { defaultTheme, typeScale, primaryFont, headerFont } from "../utils";
 
 const Button = styled.button`
   background-color: ${defaultTheme.primaryColor};
@@ -8,7 +8,7 @@ const Button = styled.button`
   border-radius: 8px;
   min-width: 100px;
   cursor: pointer;
-  font-family: "Cabin", sans-serif;
+  font-family: ${primaryFont};
 `;
 
 const PrimaryButton = styled(Button)`
