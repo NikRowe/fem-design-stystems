@@ -1,5 +1,5 @@
 import { seafoamGreen, neutral } from "./colors";
-import { primaryFont } from "./typography  ";
+import { primaryFont } from "./typography";
 
 export const defaultTheme = {
   primaryColor: seafoamGreen[300],
