@@ -1,9 +1,9 @@
 export const seafoamGreen = {
-  100: "#59F0C7",
-  200: "#678F84",
-  300: "#60BFA6",
-  400: "#E3FAF4",
-  500: "#BEEDE1",
+  100: "#E3FAF4",
+  200: "#BEEDE1",
+  300: "#59F0C7",
+  400: "#60BFA6",
+  500: "#678F84",
 };
 
 export const green = {
