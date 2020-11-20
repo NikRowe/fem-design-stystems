@@ -37,6 +37,56 @@ const BUTTON_MODIFIERS = {
   tertiaryButtonWarning: () => `
     background: none;
   `,
+  success: () => `
+    color: ${defaultTheme.status.successColor};
+
+    &:hover, &:focus {
+      background-color: ${defaultTheme.status.successColorHover};
+      outline: ${defaultTheme.status.successColorHover};
+    }
+
+    &:active { 
+      background-color: ${defaultTheme.status.successColorActive};
+      border-color: ${defaultTheme.status.successColorActive};
+    }
+  `,
+  primaryButtonSuccess: () => `
+   background-color: ${defaultTheme.status.successColor}; 
+   color: white
+  `,
+  seccondaryButtonSuccess: () => `
+    backround: none;
+    border: 2px solid ${defaultTheme.status.successColor};
+  `,
+
+  tertiaryButtonSuccess: () => `
+    background: none;
+  `,
+  error: () => `
+    color: ${defaultTheme.status.errorColor};
+
+    &:hover, &:focus {
+      background-color: ${defaultTheme.status.errorColorHover};
+      outline: ${defaultTheme.status.errorColorHover};
+    }
+
+    &:active { 
+      background-color: ${defaultTheme.status.errorColorActive};
+      border-color: ${defaultTheme.status.errorColorActive};
+    }
+  `,
+  primaryButtonError: () => `
+   background-color: ${defaultTheme.status.errorColor}; 
+   color: white
+  `,
+  seccondaryButtonError: () => `
+    backround: none;
+    border: 2px solid ${defaultTheme.status.errorColor};
+  `,
+
+  tertiaryButtonError: () => `
+    background: none;
+  `,
 };
 
 const Button = styled.button`

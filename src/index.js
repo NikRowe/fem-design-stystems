@@ -9,16 +9,16 @@ import { GlobalStyle } from "./utils";
 const App = () => {
   return (
     <div>
-      <PrimaryButton modifiers={["small", "primaryButtonWarning", "warning"]}>
+      <PrimaryButton modifiers={["small", "primaryButtonError", "error"]}>
         {" "}
         Hello World{" "}
       </PrimaryButton>
-      <SeccondaryButton
-        modifiers={["large", "seccondaryButtonWarning", "warning"]}
-      >
+      <SeccondaryButton modifiers={["large", "seccondaryButtonError", "error"]}>
         Sup World
       </SeccondaryButton>
-      <TertiaryButton>Goodbye World</TertiaryButton>
+      <TertiaryButton modifiers={["error", "tertiaryButtonError"]}>
+        Goodbye World
+      </TertiaryButton>
       <GlobalStyle />
     </div>
   );
