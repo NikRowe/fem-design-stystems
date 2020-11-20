@@ -12,10 +12,36 @@ const BUTTON_MODIFIERS = {
     font-family: ${headerFont};
     padding: 16px 24px;
   `,
+  warning: () => `
+    color: ${defaultTheme.status.warningColor};
+
+    &:hover, &:focus {
+      background-color: ${defaultTheme.status.warningColorHover};
+      outline: ${defaultTheme.status.warningColorHover};
+    }
+
+    &:active { 
+      background-color: ${defaultTheme.status.warningColorActive};
+      border-color: ${defaultTheme.status.warningColorActive};
+    }
+  `,
+  primaryButtonWarning: () => `
+   background-color: ${defaultTheme.status.warningColor}; 
+   color: white
+  `,
+  seccondaryButtonWarning: () => `
+    backround: none;
+    border: 2px solid ${defaultTheme.status.warningColor};
+  `,
+
+  tertiaryButtonWarning: () => `
+    background: none;
+  `,
 };
 
 const Button = styled.button`
   padding: 8px 12px;
+  color: white;
   font-size: ${typeScale.paragraph};
   border-radius: 8px;
   min-width: 100px;
@@ -40,7 +66,6 @@ const Button = styled.button`
 const PrimaryButton = styled(Button)`
   background-color: ${defaultTheme.primaryColor};
   border: none;
-  color: white;
 
   &:disabled {
     background-color: ${defaultTheme.disabled};
